@@ -1,0 +1,22 @@
+{% extends 'base_file.html' %}
+
+{% block title %}
+    Одежда
+{% endblock %}
+
+{% block content %}
+    <table>
+        <tr>
+            <th>{{ name }}</th>
+            <th>{{ size }}</th>
+            <th>{{ amount }}</th>
+        </tr>
+        {% for clothes in clothes_list %}
+        <tr>
+            <td>{{ clothes.name }}</td>
+            <td>{{ clothes.size }}</td>
+            <td>{{ clothes.amount }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+{% endblock %}

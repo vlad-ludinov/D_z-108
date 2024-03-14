@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>
+        {% block title %}
+            Мой магазин
+        {% endblock %}
+    </title>
+    <style>
+        html, body{
+            height: 100%
+            width: 100%
+        }
+        .dws-menu{
+            background-color: #99ccff;
+            width: 100%;
+        }
+        ul.dws-ul{
+            padding: 10;
+        }
+        li.dws-li{
+            list-style: none;
+            padding: 5;
+        }
+        li.dws-li a{
+            text-decoration: none;
+            font-size: 18px;
+        }
+        table {
+            border-spacing: 0 0px;
+        }
+        th {
+            padding: 10px 20px;
+            border-top: 1px solid;
+            border-bottom: 1px solid;
+            border-left: 1px solid;
+            font-size: 0.9em;
+        }
+        th:last-child {
+            border-right: 1px solid;
+        }
+        td {
+            padding: 10px 10px;
+            border-bottom: 1px solid #e0dede;
+            border-left: 1px solid #e0dede;
+        }
+        td:first-child {
+            border-left: 0px solid;
+        }
+        footer{
+            padding: 10px 20px;
+            background: #666;
+            color: white;
+            position: absolute;
+            bottom: 0;
+            width: 98.8%;
+            box-sizing: border-box;
+        }
+    </style>
+
+</head>
+<body>
+
+    <header>
+        <div class="dws-menu">
+            <ul class="dws-ul">
+                <li class="dws-li"><a href="/clothes/">Одежда</a></li>
+                <li class="dws-li"><a href="/shoes/">Обувь</a></li>
+                <li class="dws-li"><a href="/accessories/">Аксессуары</a></li>
+           </ul>
+        </div>
+    </header>
+
+    {% block content %}
+        Страница не заполнена
+    {% endblock %}
+    <footer>
+        <p>Все права защищены &copy;</p>
+    </footer>
+</body>
+</html>
